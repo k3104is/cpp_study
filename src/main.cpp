@@ -52,6 +52,6 @@ void ClassTest(void)
 
 int main()
 {
-	// ClassTest();
+	ClassTest();
 	return 0;
 }
