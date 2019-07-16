@@ -1,7 +1,8 @@
 #include <iostream>
+#include <stdio.h>
 #include <string>
 #include "sample.h"
-
+#include "./Car/car.h"
 void HelloWorld(void)
 {
 	#if 0
@@ -10,7 +11,7 @@ void HelloWorld(void)
 	#else
 	std::cout << "Hello world." << std::endl;
 	#endif
-	/* contは標準入出力をつかさどるオブジェクト */
+	/* coutは標準入出力をつかさどるオブジェクト */
 	/* endlは改行。\nも利用可能だが、C++ではこちらが一般的 */
 	return;
 }
@@ -61,8 +62,69 @@ void ClassTest2(void)
     cout << obj2.get() << endl;  // obj2のメンバ変数の値を出力
 	return;
 }
+void AccessModifier(void)
+{
+	using namespace std;
+ 
+    Sample s;
+    s.a = 1;
+    //s.b = 2;
+    s.func1();
+    //s.func2();
+	return;
+}
+void CapselTest(void)
+{
+	using namespace std;
+    CapselSample s;
+
+    s.setNum(5);
+    cout << s.getNum() << endl;
+	return;
+}
+void StringClassTest(void)
+{
+	using namespace std;
+    string s;
+
+    s = "This is a";    //  最初の文字列
+    // s.append(" pen.");  //  文字列の追加
+	s = s + " pen.";
+    cout << s << endl;
+    cout << "文字列の長さ：" << s.length() << endl;
+    //  printfで表示
+    printf("char*:%s\n",s.c_str());	/* stringクラスをconst char型に変更 */
+	return;
+}
+
+void ConstDestTest(void)
+{
+	using namespace std;
+    CCar c;
+
+    c.supply(10);   //  燃料補給
+    c.move();   //  移動
+    c.move();   //  移動
+	return;
+}
+
+void NewDelTest(void)
+{
+	using namespace std;
+    CCar* pC = 0;
+
+    pC = new CCar();    //  インスタンス生成
+    pC->supply(10);      //  燃料補給
+    pC->move();          //  移動
+    pC->move();          //  移動
+    delete pC;          //  インスタンスの消去
+    cout << "インスタンスの消去終了" << endl;
+	return;
+}
+
+
 int main()
 {
-	ClassTest2();
+	NewDelTest();
 	return 0;
 }
