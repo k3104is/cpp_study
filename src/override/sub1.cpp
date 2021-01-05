@@ -1,4 +1,4 @@
-#include "Sub1.h"
+#include "sub1.h"
 #include <iostream>
  
 using namespace std;

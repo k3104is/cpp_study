@@ -1,12 +1,13 @@
 #include <iostream>
 #include <stdio.h>
 #include <string>
-#include "sample.h"
 #include "./rat/rat.h"
 #include "./car2/car2.h"
 #include "./car2/ambulance.h"
 #include "./calc/calc.h"
 #include "./Car/car.h"
+#include "./str/str.h"
+
 void HelloWorld(void)
 {
 	#if 0
@@ -42,50 +43,6 @@ void StrTest(void)
 	return;
 }
 
-void ClassTest(void)
-{
-	using namespace std;
-    CSample obj;  // CSampleをインスタンス化
-    int num;
-     
-    cout << "Input int :" << endl;
-    cin >> num;
-    obj.set(num);  // CSampleのメンバ変数をセット
-    cout << obj.get() << endl;  // メンバ変数の値を出力
-	return;
-}
-void ClassTest2(void)
-{
-	using namespace std;
-    CSample obj1,obj2;  // CSampleのインスタンスを複数生成
-     
-    obj1.set( 1 );  // obj1のsetメソッド呼び出し
-    obj2.set( 2 );  // obj1のsetメソッド呼び出し
-     
-    cout << obj1.get() << endl;  // obj1のメンバ変数の値を出力
-    cout << obj2.get() << endl;  // obj2のメンバ変数の値を出力
-	return;
-}
-void AccessModifier(void)
-{
-	using namespace std;
- 
-    Sample s;
-    s.a = 1;
-    //s.b = 2;
-    s.func1();
-    //s.func2();
-	return;
-}
-void CapselTest(void)
-{
-	using namespace std;
-    CapselSample s;
-
-    s.setNum(5);
-    cout << s.getNum() << endl;
-	return;
-}
 void StringClassTest(void)
 {
 	using namespace std;
@@ -205,12 +162,17 @@ void testOverride(void)
     sp2 = new Sub1();
     sp1->func();
     sp2->func();
-    delete sp1, sp2;
+    // delete sp1, sp2;
+    delete sp1;
+    delete sp2;
+
 	return;
 }
 
 int main()
 {
-	NewDelTest();
+    CStr c_str1("This is a test."), c_str2("I like C++.");
+    c_str1.Show();
+    c_str2.Show();
 	return 0;
 }

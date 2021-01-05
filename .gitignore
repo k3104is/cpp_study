@@ -1,3 +1,6 @@
 /.vscode/
 /.metadata/
 /Test/
+*.o
+*.d
+*.out

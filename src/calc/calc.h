@@ -21,4 +21,4 @@ public:
     int getB();
 };
  
-#endif _CALC_H_
+#endif /* _CALC_H_ */

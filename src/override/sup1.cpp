@@ -1,4 +1,4 @@
-#include "Sup1.h"
+#include "sup1.h"
 #include <iostream>
  
 using namespace std;
