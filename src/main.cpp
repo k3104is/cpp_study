@@ -7,6 +7,7 @@
 #include "./calc/calc.h"
 #include "./Car/car.h"
 #include "./str/str.h"
+#include "./smart_pointer/smart_pointer.h"
 
 void HelloWorld(void)
 {
@@ -169,10 +170,15 @@ void testOverride(void)
 	return;
 }
 
+
+
 int main()
 {
-    CStr c_str1("This is a test."), c_str2("I like C++.");
-    c_str1.Show();
-    c_str2.Show();
+    HelloWorld();
+    smart_pointer();
+    // InputNum();
+    // CStr c_str1("This is a test."), c_str2("I like C++.");
+    // c_str1.Show();
+    // c_str2.Show();
 	return 0;
 }

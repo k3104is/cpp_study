@@ -4,3 +4,7 @@
 *.o
 *.d
 *.out
+/obj/
+/CMakeFiles/
+cmake_install.*
+CMakeCache.txt
