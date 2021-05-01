@@ -8,6 +8,9 @@
 #include "./Car/car.h"
 #include "./str/str.h"
 #include "./smart_pointer/smart_pointer.h"
+#include "./template/template.h"
+#include "./stl/stl.h"
+#include "./vfunc/vfunc.h"
 
 void HelloWorld(void)
 {
@@ -169,16 +172,33 @@ void testOverride(void)
 
 	return;
 }
+// 参照渡し
+void ref(unsigned char& n)
+{
+    n = 1;
+    return;
+}
+void print(int n)
+{
+    std::cout << "n=" << n << std::endl;
+}
+void ref_test(void)
+{
+    unsigned char n = 5;
+    print(n);
+    ref(n);
+    print(n);
+    return;
+}
 
 
 
 int main()
 {
     HelloWorld();
-    smart_pointer();
-    // InputNum();
-    // CStr c_str1("This is a test."), c_str2("I like C++.");
-    // c_str1.Show();
-    // c_str2.Show();
+    // templateFunc();
+    // templateClass();
+    // stl_test();
+    vfunc();
 	return 0;
 }

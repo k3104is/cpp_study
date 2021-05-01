@@ -366,6 +366,33 @@ src/smart_pointer/smart_pointer.cpp.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/smart_pointer/smart_pointer.cpp.s
 .PHONY : src/smart_pointer/smart_pointer.cpp.s
 
+src/stl/stl.o: src/stl/stl.cpp.o
+
+.PHONY : src/stl/stl.o
+
+# target to build an object file
+src/stl/stl.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/stl/stl.cpp.o
+.PHONY : src/stl/stl.cpp.o
+
+src/stl/stl.i: src/stl/stl.cpp.i
+
+.PHONY : src/stl/stl.i
+
+# target to preprocess a source file
+src/stl/stl.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/stl/stl.cpp.i
+.PHONY : src/stl/stl.cpp.i
+
+src/stl/stl.s: src/stl/stl.cpp.s
+
+.PHONY : src/stl/stl.s
+
+# target to generate assembly for a file
+src/stl/stl.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/stl/stl.cpp.s
+.PHONY : src/stl/stl.cpp.s
+
 src/str/str.o: src/str/str.cpp.o
 
 .PHONY : src/str/str.o
@@ -392,6 +419,60 @@ src/str/str.s: src/str/str.cpp.s
 src/str/str.cpp.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/str/str.cpp.s
 .PHONY : src/str/str.cpp.s
+
+src/template/template.o: src/template/template.cpp.o
+
+.PHONY : src/template/template.o
+
+# target to build an object file
+src/template/template.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/template/template.cpp.o
+.PHONY : src/template/template.cpp.o
+
+src/template/template.i: src/template/template.cpp.i
+
+.PHONY : src/template/template.i
+
+# target to preprocess a source file
+src/template/template.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/template/template.cpp.i
+.PHONY : src/template/template.cpp.i
+
+src/template/template.s: src/template/template.cpp.s
+
+.PHONY : src/template/template.s
+
+# target to generate assembly for a file
+src/template/template.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/template/template.cpp.s
+.PHONY : src/template/template.cpp.s
+
+src/vfunc/vfunc.o: src/vfunc/vfunc.cpp.o
+
+.PHONY : src/vfunc/vfunc.o
+
+# target to build an object file
+src/vfunc/vfunc.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/vfunc/vfunc.cpp.o
+.PHONY : src/vfunc/vfunc.cpp.o
+
+src/vfunc/vfunc.i: src/vfunc/vfunc.cpp.i
+
+.PHONY : src/vfunc/vfunc.i
+
+# target to preprocess a source file
+src/vfunc/vfunc.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/vfunc/vfunc.cpp.i
+.PHONY : src/vfunc/vfunc.cpp.i
+
+src/vfunc/vfunc.s: src/vfunc/vfunc.cpp.s
+
+.PHONY : src/vfunc/vfunc.s
+
+# target to generate assembly for a file
+src/vfunc/vfunc.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/vfunc/vfunc.cpp.s
+.PHONY : src/vfunc/vfunc.cpp.s
 
 # Help Target
 help:
@@ -429,9 +510,18 @@ help:
 	@echo "... src/smart_pointer/smart_pointer.o"
 	@echo "... src/smart_pointer/smart_pointer.i"
 	@echo "... src/smart_pointer/smart_pointer.s"
+	@echo "... src/stl/stl.o"
+	@echo "... src/stl/stl.i"
+	@echo "... src/stl/stl.s"
 	@echo "... src/str/str.o"
 	@echo "... src/str/str.i"
 	@echo "... src/str/str.s"
+	@echo "... src/template/template.o"
+	@echo "... src/template/template.i"
+	@echo "... src/template/template.s"
+	@echo "... src/vfunc/vfunc.o"
+	@echo "... src/vfunc/vfunc.i"
+	@echo "... src/vfunc/vfunc.s"
 .PHONY : help
 
 
